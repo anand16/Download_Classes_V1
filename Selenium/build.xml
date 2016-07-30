@@ -1,0 +1,11 @@
+<project name="MyAntBuildFile" default="target3">
+<target name="target1">
+	<echo>This is my first ANT Statement</echo>
+</target>
+	<target name="target2" depends="target1">
+		<echo>This is second ANT Statement</echo>
+	</target>
+	<target name="target3" depends="target2">
+		<echo>This is my Third ANT Statement</echo>
+	</target>
+</project>

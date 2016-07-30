@@ -1,0 +1,20 @@
+package Package.JavaStandardPrograms;
+
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ArrayList_program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+List<String> al= new ArrayList<>();
+al.add("one");
+al.add("two");
+for(int i=0;i<al.size();i++)
+{
+	System.out.println(al.get(i));
+
+	}
+
+}

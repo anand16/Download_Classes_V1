@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [OrangeHRM Demo]">
+  <parameter name="browser" value="chrome"/>
+  <test name="On Firefox(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.orangehrm.baseclass.AddEmployee">
+        <methods>
+          <include name="addEmpTest"/>
+        </methods>
+      </class> <!-- com.orangehrm.baseclass.AddEmployee -->
+      <class name="com.orangehrm.baseclass.Login">
+        <methods>
+          <include name="loginTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.orangehrm.baseclass.Login -->
+      <class name="com.orangehrm.baseclass.TakingScreenshot">
+        <methods>
+          <include name="screenshotTest"/>
+        </methods>
+      </class> <!-- com.orangehrm.baseclass.TakingScreenshot -->
+      <class name="com.orangehrm.baseclass.Logout">
+        <methods>
+          <include name="logoutTest"/>
+        </methods>
+      </class> <!-- com.orangehrm.baseclass.Logout -->
+    </classes>
+  </test> <!-- On Firefox(failed) -->
+  <test name="On Chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.orangehrm.baseclass.AddEmployee">
+        <methods>
+          <include name="addEmpTest"/>
+        </methods>
+      </class> <!-- com.orangehrm.baseclass.AddEmployee -->
+      <class name="com.orangehrm.baseclass.Login">
+        <methods>
+          <include name="loginTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.orangehrm.baseclass.Login -->
+      <class name="com.orangehrm.baseclass.TakingScreenshot">
+        <methods>
+          <include name="screenshotTest"/>
+        </methods>
+      </class> <!-- com.orangehrm.baseclass.TakingScreenshot -->
+      <class name="com.orangehrm.baseclass.Logout">
+        <methods>
+          <include name="logoutTest"/>
+        </methods>
+      </class> <!-- com.orangehrm.baseclass.Logout -->
+    </classes>
+  </test> <!-- On Chrome(failed) -->
+</suite> <!-- Failed suite [OrangeHRM Demo] -->

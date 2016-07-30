@@ -1,0 +1,29 @@
+package Package.POM;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
+
+
+public class FindingFlight {
+	@FindBy(name ="country");
+	WebElement countries;
+	
+	public void SelectCountry()
+	{
+		List<WebElement> dropdown=countries.findElements(By.tagName("option"));
+		
+		int x=randomNo(countries.size()-1);
+		countries.get(x).click();
+	}
+
+public int randomNo(int i)
+{
+int x=(int)(Math.random()*i);
+return x;
+}
+
+}

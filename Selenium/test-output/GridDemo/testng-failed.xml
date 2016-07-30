@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [GridDemo]">
+  <parameter name="browser" value="firefox"/>
+  <test name="GMailChrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Package.Grid.SequentialExample">
+        <methods>
+          <include name="GMailTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Package.Grid.SequentialExample -->
+    </classes>
+  </test> <!-- GMailChrome(failed) -->
+</suite> <!-- Failed suite [GridDemo] -->

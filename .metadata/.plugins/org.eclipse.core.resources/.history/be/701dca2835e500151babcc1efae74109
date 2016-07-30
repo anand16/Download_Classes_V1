@@ -1,0 +1,30 @@
+package Package.Keyworddriven;
+
+import java.io.FileInputStream;
+import java.lang.reflect.Method;
+
+import org.apache.poi.ss.formula.functions.Rows;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class KeywordsReflection {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+keyWords key = new keyWords();
+Method[] mymethods=key.getClass().getMethods();
+FileInputStream f = new FileInputStream("C:\\Users\\anand\\Desktop\\DoubleClick\\LoginKeywords.xlsx")
+XSSFWorkbook wb= new XSSFWorkbook(f);
+XSSFSheet ws=wb.getSheet("Sheet1");
+int rowscount=ws.getLastRowNum();
+for(int i=0;i<=rowscount;i++)
+{
+Row r = ws.getRow(i)	;
+
+}
+
+
+	}
+
+}

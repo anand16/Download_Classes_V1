@@ -1,0 +1,10 @@
+package Pakage.AUI;
+
+public class RightClickExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

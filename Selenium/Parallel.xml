@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="GridDemo" verbose="1" parallel="tests">
+  <test name="GmailFirefox" >
+   <parameter name="browser" value="firefox"  />
+    <classes>
+       <class name="Package.Grid.ParallelExample" />
+    </classes>
+  </test>
+  <test name="GmailChrome" >
+   <parameter name="browser" value="chrome"  />
+    <classes>
+       <class name="Package.Grid.ParallelExample" />
+    </classes>
+  </test>
+</suite>

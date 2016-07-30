@@ -1,0 +1,54 @@
+package Package.Keyworddriven;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class keyWords {
+	
+	FirefoxDriver driver;
+	public void launchBrowser() throws InterruptedException
+
+	{
+		driver = new FirefoxDriver();
+		Thread.sleep(20);
+		
+	}
+
+	public void navigate() throws InterruptedException
+	{
+		
+		driver.get("http://gmail.com");
+		Thread.sleep(20);
+	}
+	
+	public void enterUsername() throws InterruptedException
+	{Thread.sleep(20);
+		driver.findElement(By.id("Email")).clear();
+		driver.findElement(By.id("Email")).sendKeys("reach.seleniumprogramme");
+		
+	}
+
+	public void buttonOne() throws InterruptedException
+	{
+		
+		driver.findElement(By.xpath("//*[@id='next']")).click();
+		Thread.sleep(20);
+	}
+	
+
+    public void enterPasword() throws InterruptedException
+    {
+    	
+    	driver.findElement(By.name("Passwd")).clear();
+    	driver.findElement(By.name("Passwd")).sendKeys("sssairam");
+    	Thread.sleep(20);
+    }
+
+    public void buttonTwo() throws InterruptedException
+    
+    {Thread.sleep(20);
+    	driver.findElement(By.id("signIn")).click();
+    	
+    }
+
+}
